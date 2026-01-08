@@ -39,8 +39,39 @@ Padding between the image and the border.
 A box shadow around the image border with zero offset and depth of 30px in gray. */
 
 p {
-    padding: 10px;
+    padding: 0;
 }
 
-/* This CSS rule selects all the <p > (paragraph) elements as the selector and applies the following declaration: 
-Padding between the paragraph content and the border is set to 10 pixels. */
+main {
+    max-width: 800px;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+    margin: 0 10px;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    padding: 0;
+    box-shadow: 0;
+}
+
+aside {
+    width: 20rem;
+    margin: 5px;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    margin-top: 1rem;
+    border-top: 1px solid black;
+    text-align: center;
+}
