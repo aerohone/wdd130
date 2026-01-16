@@ -1,6 +1,13 @@
+:root {
+    --main-background-color: darkblue;
+    --main-border: 1px solid rgb(0 0 0/ 0.1);
+    --main-padding: 1rem;
+
+}
+
 nav {
-    background-color: darkblue;
-    padding: 10px;
+    background-color: var(--main-background-color);
+    padding: var(--main-padding);
 }
 
 /*This CSS rule names the <nav > element as the selected element to apply two style declarations. The background color will be the color "darkblue", which is a valid, named color. 
@@ -9,7 +16,7 @@ Padding, or area between the content and border is set to 10 pixels for readabil
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: var(--main-padding);
 }
 
 /*This CSS rule selects all the <a > (anchor / link) elements in the HTML that are children of the <nav > element and applies the following declarations: 
@@ -18,7 +25,7 @@ The display will change from the default of inline to block.
 Each anchor tag will have padding of 20px; */
 
 h1 {
-    color: darkblue;
+    color: var(--main-background-color);
 }
 
 /*This CSS rule references the <h1 > (heading 1) element as the selected element and applies the following declaration: 
@@ -27,8 +34,8 @@ The foreground, font color is set to darkblue. */
 img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
-    padding: 2px;
+    border: var(--main-border);
+    padding: var(--main-padding);
     box-shadow: 0 0 30px gray;
 }
 
@@ -39,7 +46,7 @@ Padding between the image and the border.
 A box shadow around the image border with zero offset and depth of 30px in gray. */
 
 p {
-    padding: 0;
+    padding: var(--main-padding);
 }
 
 main {
@@ -50,16 +57,16 @@ main img {
     width: 150px;
     height: auto;
     margin: 0 10px;
-    border: 1px solid rgb(0 0 0 / 0.1);
-    padding: 0;
+    border: var(--main-border);
+    padding: var(--main-padding);
     box-shadow: 0 0 30px gray;
 }
 
 aside {
     width: 20rem;
     margin: 5px;
-    border: 1px solid rgb(0 0 0 / 0.1);
-    padding: 1rem;
+    border: var(--main-border);
+    padding: var(--main-padding);
     background-color: lightgray;
     color: #333;
     text-align: center;
