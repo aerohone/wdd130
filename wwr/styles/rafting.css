@@ -1,9 +1,8 @@
 :root {
     --primary-color: #233a48;
     --secondary-color: #436e67;
-    --accent1-color: #6c9585;
-    /*For future use --accent2-color: #c6cfb9; */
-    --accent3-color: white;
+    --accent1-color: #8b9b95;
+    --accent2-color: white;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -63,7 +62,7 @@ h1 {
     text-align: center;
     opacity: .8;
     background-color: var(--primary-color);
-    color: var(--accent3-color);
+    color: var(--accent2-color);
 }
 
 .hero article {
@@ -72,7 +71,7 @@ h1 {
     margin: 0px;
     padding: 5px;
     background-color: var(--secondary-color);
-    color: var(--accent3-color);
+    color: var(--accent2-color);
 }
 
 .hero article img {
@@ -85,7 +84,7 @@ h2 {
     margin: 10px;
     padding: 10px;
     background-color: var(--primary-color);
-    color: var(--accent3-color);
+    color: var(--accent2-color);
 }
 
 section p {
