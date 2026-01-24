@@ -2,7 +2,7 @@
     --primary-color: #233a48;
     --secondary-color: #436e67;
     --accent1-color: #6c9585;
-    --accent2-color: #c6cfb9;
+    /*For future use --accent2-color: #c6cfb9; */
     --accent3-color: white;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
@@ -89,5 +89,9 @@ h2 {
 }
 
 section p {
+    color: black;
+}
+
+footer p {
     color: black;
 }
