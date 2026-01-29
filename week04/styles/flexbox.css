@@ -8,6 +8,12 @@ body {
     background-color: lightyellow;
     display: flex;
     flex-wrap: wrap;
+    /* flex-direction: row;
+    justify-content: space-around; */
+}
+
+main div {
+    flex: 1 1 auto;
 }
 
 .flex-item {

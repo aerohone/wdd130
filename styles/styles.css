@@ -16,32 +16,40 @@ body {
     font-family: Roboto, Arial, sans-serif;
 }
 
+header,
+footer .grid {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
 nav {
     background-color: var(--main-background-color);
     padding: var(--main-padding);
-}
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 
-/*This CSS rule names the <nav > element as the selected element to apply two style declarations. The background color will be the color "darkblue", which is a valid, named color. 
-Padding, or area between the content and border is set to 10 pixels for readability. */
+}
 
 nav a {
     color: white;
     display: block;
     padding: var(--main-padding);
+    text-decoration: none;
+    font-size: 1.2rem;
+    /* font size 1.2rem will make the text just a bit bigger then average */
 }
-
-/*This CSS rule selects all the <a > (anchor / link) elements in the HTML that are children of the <nav > element and applies the following declarations: 
-The foreground or font color will be white. 
-The display will change from the default of inline to block. 
-Each anchor tag will have padding of 20px; */
 
 h1 {
     color: var(--main-background-color);
     padding: .5rem;
+    border-bottom: 1px solid black;
 }
-
-/*This CSS rule references the <h1 > (heading 1) element as the selected element and applies the following declaration: 
-The foreground, font color is set to darkblue. */
 
 img {
     width: 150px;
@@ -51,12 +59,6 @@ img {
     box-shadow: 0 0 30px gray;
 }
 
-/*This CSS rule references all the <img > (image) elements as the selector and applies the following declarations: 
-A set width with a height that will adjust dynamically to fit the image's aspect ratio.
-A border shortcut that names the width, type of border, and color of the border. 
-Padding between the image and the border. 
-A box shadow around the image border with zero offset and depth of 30px in gray. */
-
 p {
     padding: var(--main-padding);
     padding-bottom: 7rem;
@@ -64,7 +66,8 @@ p {
 }
 
 main {
-    max-width: 800px;
+    grid-column: 2 /3;
+    align-items: center;
 }
 
 main img {
@@ -86,6 +89,8 @@ aside {
     color: #333; */
     text-align: center;
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside img {
