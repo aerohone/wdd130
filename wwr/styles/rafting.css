@@ -2,7 +2,7 @@
     --primary-color: #233a48;
     --secondary-color: #436e67;
     --accent1-color: #18664afd;
-    --accent2-color: white;
+    --accent2-color: #fff;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -15,7 +15,7 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: #000;
 }
 
 header,
@@ -35,8 +35,9 @@ header {
 }
 
 header img {
-    width: 150px;
+    width: 125px;
     height: auto;
+    padding: 10px;
     margin-left: 50%;
 }
 
