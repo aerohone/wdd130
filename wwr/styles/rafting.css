@@ -1,8 +1,9 @@
 :root {
     --primary-color: #233a48;
     --secondary-color: #436e67;
-    --accent1-color: #18664afd;
-    --accent2-color: #fff;
+    /* --accent1-color: #18664afd; */
+    --font1-color: #000;
+    --font2-color: #fff;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -15,7 +16,7 @@
 
 body {
     font-family: var(--body-font);
-    color: #000;
+    color: var(--font1-color);
 }
 
 header,
@@ -27,37 +28,48 @@ footer {
 
 header {
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     background-color: var(--secondary-color);
     max-width: 1000px;
-    justify-content: flex-end;
+    justify-content: center;
+    color: var(--font2-color);
+
 }
 
-header img {
+.logo {
+    display: block;
+    text-align: center;
+}
+
+.logo img {
     width: 125px;
     height: auto;
     padding: 10px;
-    margin-left: 50%;
+
 }
 
-nav {
-    grid-column-start: 3;
+header nav {
+    grid-column-start: 2;
+
 }
 
 .navigation {
     display: flex;
+    flex-direction: row;
     list-style: none;
+
 }
 
 .navigation li {
     flex: 1 1 auto;
+    text-align: center;
 }
 
 .navigation a {
     display: block;
     text-decoration: none;
-    color: white;
+    color: var(--font2-color);
     font-size: 1.2rem;
 }
 
@@ -98,7 +110,7 @@ h1 {
     text-align: center;
     opacity: .8;
     background-color: var(--primary-color);
-    color: var(--accent2-color);
+    color: var(--font2-color);
 }
 
 .hero article {
@@ -107,7 +119,7 @@ h1 {
     margin: 0px;
     padding: 5px;
     background-color: var(--secondary-color);
-    color: var(--accent2-color);
+    color: var(--font2-color);
 }
 
 .hero article img {
@@ -120,7 +132,7 @@ h2 {
     margin: 10px;
     padding: 10px;
     background-color: var(--primary-color);
-    color: var(--accent2-color);
+    color: var(--font2-color);
 }
 
 .history {
@@ -146,7 +158,7 @@ h2 {
 
 .adventures figure {
     max-width: 100px;
-    justify-content: center;
+
 }
 
 .adventures figure img {
@@ -159,7 +171,7 @@ h2 {
 }
 
 section p {
-    color: black;
+    color: var(--font1-color);
     margin: 0;
 }
 
@@ -170,5 +182,5 @@ footer {
 }
 
 footer p {
-    color: black;
+    color: var(--font1-color);
 }
