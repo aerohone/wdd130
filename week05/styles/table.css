@@ -1,0 +1,29 @@
+table {
+    border: 2px solid grey;
+    border-collapse: collapse;
+    /* the border-collapse makes the borders overlap into one it seems.  */
+    letter-spacing: 1px;
+    /* This spaces out letters (easier to read but maybe a better font would make it redundant...) */
+}
+
+thead th,
+tfoot tr {
+    background-color: black;
+    font-size: 1.2rem;
+    color: white;
+}
+
+td,
+th {
+    border: 1px solid grey;
+    text-align: center;
+    padding: 8px 12px;
+}
+
+.League {
+    font-weight: bold;
+}
+
+.shade {
+    background-color: rgb(231, 231, 231);
+}
