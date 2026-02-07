@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Death Wish Rafting Company</title>
+    <meta name="description"
+      content="This page shows contact information for Death Wish Rafting Company including a form to send us a message and subscribe to our monthly newsletter.">
+    <meta name="author" content="Cleon Hone">
+    <link rel="stylesheet" href="styles/rafting.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/z_boat_splash.png" alt="Rafting Logo">
+        </div>
+        <nav>
+            <!-- Better practice to set in ul and li (list) -->
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>White Water Rafting Company</h1>
+        <div class="information">
+            <p>123 Main River Street</p>
+            <p>Kolob, California</p>
+            <p>+1 999 999 9999</p>
+            <p>info@deathwishrafting.com</p>
+        </div>
+        <section class="map-form">
+            <div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9618.192148677974!2d-110.82732544265686!3d43.20576030137583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53534f82b07ce943%3A0x73b2db1630c4c1d2!2sPullout%20for%20Big%20Kahuna%20on%20Snake%20River!5e1!3m2!1sen!2sus!4v1770436896460!5m2!1sen!2sus"
+                  width="600" height="450" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <form>
+                <fieldset>
+                    <div class="form-item col1">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-item col1">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </fieldset>
+                <fieldset class="form-item col3">
+                    <p>Message Purpose</p>
+                    <div class="radio col2">
+                        <div class="form-item radio-space">
+                            <label><input type="radio" name="purpose" value="general">General
+                                Inquiry</label>
+                        </div>
+                        <div class="form-item radio-space">
+                            <label><input type="radio" name="purpose"
+                                  value="reservation">Reservation
+                                Question</label>
+                        </div>
+                        <div class="form-item radio-space">
+                            <label><input type="radio" name="purpose" value="suggestion">Website
+                                Suggestion</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="3"></textarea>
+                </fieldset>
+                <fieldset class="subscribe">
+                    <input type="checkbox" name="subscribe" id="subscribe">
+                    <label for="subscribe">Please Subscribe me to the monthly newsletter</label>
+
+                </fieldset>
+                <button type="submit">Get in Touch!</button>
+
+            </form>
+        </section>
+        <section class="to-serve">
+            <h2>We Are Here to Serve You</h2>
+            <div class="employee">
+                <figure>
+                    <img src="images/George.png" alt="profile image of George" max-width:>
+                    <figcaption> Co-director:<br>George </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Fred.png" alt="profile image of Fred">
+                    <figcaption> Co-director:<br>Fred</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Ron.jpg" alt="profile image of Ron">
+                    <figcaption> Younger Brother helper:<br>Ron </figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 | Death Wish Rafting Company | Cleon Hone</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook-square.svg" alt="Facebook Icon" width="50">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin-square.svg" alt="linkedin Icon" width="50">
+            </a>
+            <a href="https://instagram.com"> <img src="images/instagram-square.svg"
+                  alt="Instagram Icon" width="50">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
