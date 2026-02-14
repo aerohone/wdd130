@@ -123,10 +123,6 @@ h2 {
     color: #fff;
 }
 
-/* .trip-link a:hover {
-    background-origin: orange;
-} */
-
 .center-text {
     text-align: center;
     background-color: var(--primary-color);
@@ -142,7 +138,6 @@ h2 {
 .center-text p {
     margin: 0 10%;
     color: #fff;
-
 }
 
 .center-text a {
@@ -428,7 +423,7 @@ button:hover {
     margin: 1rem 5%;
 }
 
-.trip-link {
+/* .trip-link {
     position: absolute;
     bottom: 10px;
     left: 10px;
@@ -445,7 +440,7 @@ button:hover {
 .trip-link a {
     text-decoration: none;
     color: #fff;
-}
+} */
 
 .trip5 {
     grid-column: 1/3;
